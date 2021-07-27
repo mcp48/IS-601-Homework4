@@ -3,7 +3,7 @@ import mysql.connector
 import simplejson as json
 from flask import Flask, Response
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates")
 
 
 def mlb_players_import() -> List[Dict]:
